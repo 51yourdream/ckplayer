@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>升级文档</title>
+<style type="text/css">
+body,td,th {
+	font-size: 14px;
+	line-height: 22px;
+}
+p {
+	padding-left: 20px;
+	margin: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+</style>
+</head>
+
+<body>
+<p>6.7升级说明<br />
+6.4升级至6.7的方法</p>
+<p>1：替换ckplayer.swf<br />
+  2：替换ckplayer.js中的315行（(function() {）及以下的所有内容<br />
+  3：如果想在滚动文字广告使用发光滤镜，需要ckplayer.js的ckstyle()函数中和ckplayer.xml文件中增加pm_glowfilter参数。详细的可参考6.5的该函数<br />
+  4： ckplayer.js和ckplayer.xml中setup参数最后新增加三个参数，默认是0
+</p>
+<p>6.5升级至6.7的方法<br />
+1：替换ckplayer.swf<br />
+2：替换ckplayer.js中的315行（(function() {）及以下的所有内容<br />
+3：
+ckplayer.js和ckplayer.xml中setup参数最后新增三个参数，默认是0
+</p>
+<p>  6.6升级至6.7的方法<br />
+1：替换ckplayer.swf<br />
+2：替换ckplayer.js中的315行（(function() {）及以下的所有内容<br />
+3：
+ckplayer.js和ckplayer.xml中setup参数最后新增一个参数，默认是0 <br />
+一：修复Bug</p>
+<p>1：修复了多段视频播放时间出错的bug，修复了在有些情况下进度栏拖动时乱跳的bug<br />
+  2：修复了控进度栏限制向前拖动，向后拖动时间不准确的bug<br />
+3：修复了lv=1时，全屏切换时进度栏按钮位置的bug<br />
+4：修正了前置广告是视频广告时，倒计时时间设置大于视频时间导致跳转不了的bug
+</p>
+<p>二：新增加的内容</p>
+<p>1：ckplayer.js，ckplayer.xml中的setup增加了一个参数，第43个参数，默认是0，当=1时，调用网址形式或xml形式的地址时，调用文件中的视频地址可以是相对于调用文件的地址<br />
+	2：在CKobject.embed函数增加了一个参数，控制html5下控制栏是否显示，false=隐藏
+</p>
+<p>感谢各位朋友对ckplayer的支持，在本次升级中，许多朋友提供了好的建议，虽然因为考虑到大部分用户的需求后决定一些功能没有对其进行更改。</p>
+</body>
+</html>
